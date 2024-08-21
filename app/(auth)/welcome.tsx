@@ -22,12 +22,8 @@ const Home = () => {
                 }}
                 className="w-full flex justify-end items-end p-5"
             >
-
-
-
-                <Text className="text-blue-600 text-md font-JakartaBold">   <Icon  name="arrow-right" size={20} color={"#0286FF"} className={"mr-2"} />Skip</Text>
-
-
+                <Text className="text-blue-600 text-md font-JakartaBold">
+                    <Icon  name="arrow-right" size={20} color={"#0286FF"} className={"mr-2"} />Skip</Text>
             </TouchableOpacity>
 
             <Swiper
@@ -48,19 +44,19 @@ const Home = () => {
                             className="w-full h-[300px]"
                             resizeMode="contain"
                         />
-                        <View className="flex flex-row items-center justify-center w-full mt-10">
-                            <Text className="text-black text-3xl font-bold mx-10 text-center">
+                        <View className="flex flex-row items-center justify-center w-full mt-5">
+                            <Text className="text-black text-2xl font-bold mx-10 text-center">
                                 {item.title}
                             </Text>
                         </View>
-                        <Text className="text-md font-JakartaSemiBold text-center text-[#858585] mx-10 mt-3">
+                        <Text className="text-xs font-JakartaSemiBold text-center text-[#858585] mx-10 mt-3">
                             {item.description}
                         </Text>
                     </View>
                 ))}
             </Swiper>
 
-            <Text className="text-black text-md font-JakartaBold"></Text>
+            {/*<Text className="text-black text-md font-JakartaBold"></Text>*/}
 
             <CustomButton
                 title={isLastSlide ? "Get Started" : "Next"}
@@ -71,11 +67,6 @@ const Home = () => {
                 }
                 className="w-11/12 mt-10 mb-5"
             />
-
-            {/*<View>*/}
-            {/*   <HomeIcon size={20} />*/}
-            {/*</View>*/}
-
         </SafeAreaView>
     );
 };

@@ -30,6 +30,10 @@ import noResult from "@/assets/images/no-result.png";
 import onboarding1 from "@/assets/images/onboarding1.png";
 import onboarding2 from "@/assets/images/onboarding2.png";
 import onboarding3 from "@/assets/images/onboarding3.png";
+import graduating from "@/assets/images/graduating.jpg";
+import earn from "@/assets/images/earn1.jpg";
+import phone from "@/assets/images/phone.jpg";
+import pass from "@/assets/images/pass2.jpg";
 import signUpCar from "@/assets/images/signup-car.png";
 
 export const images = {
@@ -41,6 +45,10 @@ export const images = {
     check,
     noResult,
     message,
+    graduating,
+    earn,
+    phone,
+    pass
 };
 
 export const icons = {
@@ -74,24 +82,31 @@ export const icons = {
 export const onboarding = [
     {
         id: 1,
-        title: "The perfect ride is just a tap away!",
+        title: "Ace your exams with Past Papers!",
         description:
-            "Your journey begins with Ryde. Find your ideal ride effortlessly.",
-        image: images.onboarding1,
+            "Instant access to a vast collection of past exam papers,",
+        image: images.pass,
     },
     {
         id: 2,
-        title: "Best car in your hands with Ryde",
+        title: "Study Smarter, Not Harder!",
         description:
-            "Discover the convenience of finding your perfect ride with Ryde",
-        image: images.onboarding2,
+            "Revisit, revise, and reinforce your knowledge with the papers that matter",
+        image: images.phone,
     },
     {
         id: 3,
-        title: "Your ride, your way. Let's go!",
+        title: "Contribute and Earn",
         description:
-            "Enter your destination, sit back, and let us take care of the rest.",
-        image: images.onboarding3,
+            "You earn $5 per paper unique paper you upload! Help your fellow students while earning some extra cash.",
+        image: images.earn,
+    },
+    {
+        id: 4,
+        title: "Together, We Graduate!",
+        description:
+            "We’re all in this together. Let us revise and make the tent",
+        image: images.graduating,
     },
 ];
 
