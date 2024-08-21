@@ -34,6 +34,7 @@ import graduating from "@/assets/images/graduating.jpg";
 import earn from "@/assets/images/earn1.jpg";
 import phone from "@/assets/images/phone.jpg";
 import pass from "@/assets/images/pass2.jpg";
+import cocis from "@/assets/images/cocis.jpg";
 import signUpCar from "@/assets/images/signup-car.png";
 
 export const images = {
@@ -48,7 +49,8 @@ export const images = {
     graduating,
     earn,
     phone,
-    pass
+    pass,
+    cocis
 };
 
 export const icons = {
