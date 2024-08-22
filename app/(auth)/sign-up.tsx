@@ -1,12 +1,21 @@
-import {SafeAreaView} from "react-native-safe-area-context";
-import {Image, ScrollView, Text, TextInput, View} from "react-native";
+import {Image, ScrollView, Text, View} from "react-native";
 import InputField from "@/components/InputField";
 import { icons, images } from "@/constants";
 import CustomButton from "@/components/CustomButton";
 import {Link} from "expo-router";
+import {useState} from "react";
 
 export default function SignUpPage(){
 
+    const [form, setForm] = useState({
+        email: "",
+        password: "",
+        name: ""
+    })
+
+    function onSignUpPress(){
+        console.log(form)
+    }
     return (
         <ScrollView className="flex-1 bg-white">
             <View className="flex-1 bg-white">
@@ -25,16 +34,16 @@ export default function SignUpPage(){
                         label="Name"
                         placeholder="Enter name"
                         icon={icons.person}
-                        // value={form.name}
-                        // onChangeText={(value) => setForm({ ...form, name: value })}
+                         value={form.name}
+                        onChangeText={(value) => setForm({ ...form, name: value })}
                     />
                     <InputField
                         label="Email"
                         placeholder="Enter email"
                         icon={icons.email}
                         textContentType="emailAddress"
-                        // value={form.email}
-                        // onChangeText={(value) => setForm({ ...form, email: value })}
+                         value={form.email}
+                         onChangeText={(value) => setForm({ ...form, email: value })}
                     />
                     <InputField
                         label="Password"
@@ -42,12 +51,12 @@ export default function SignUpPage(){
                         icon={icons.lock}
                         secureTextEntry={true}
                         textContentType="password"
-                        // value={form.password}
-                        // onChangeText={(value) => setForm({ ...form, password: value })}
+                         value={form.password}
+                         onChangeText={(value) => setForm({ ...form, password: value })}
                     />
                     <CustomButton
                         title="Sign Up"
-                        // onPress={onSignUpPress}
+                        onPress={onSignUpPress}
                         className="mt-6"
                     />
                     {/*<OAuth />*/}
