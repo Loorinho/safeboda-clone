@@ -62,6 +62,14 @@ export default function SignInPage(){
                         Don't have an account?{" "}
                         <Text className="text-primary-500">Sign Up</Text>
                     </Link>
+
+                    <Link
+                        href="(root)/home"
+                        className="text-lg text-center text-general-200 mt-10"
+                    >
+                       Go To Home Page
+
+                    </Link>
                 </View>
             </View>
         </ScrollView>
